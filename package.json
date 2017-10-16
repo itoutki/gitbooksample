@@ -1,0 +1,29 @@
+{
+  "name": "gitbooksample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "gitbook init",
+    "prepare-theme": "cd ./node_modules/gitbook-plugin-theme-default && npm run prepublish",
+    "reset-gitbook": "gitbook uninstall latest",
+    "prepare-gitbook": "gitbook alias ./node_modules/gitbook latest",
+    "build": "gitbook build ./ --gitbook=latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itoutki/gitbooksample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gitbook": "git+https://github.com/itoutki/gitbook.git#master_patch",
+    "gitbook-plugin-theme-default": "git+https://github.com/itoutki/theme-default.git#master_patch",
+    "gitbook-cli": "^2.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/itoutki/gitbooksample/issues"
+  },
+  "homepage": "https://github.com/itoutki/gitbooksample#readme"
+}
